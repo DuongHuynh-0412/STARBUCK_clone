@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'SoDoSans';
+    src: local('SoDo Sans Regular'), local('SoDo-Sans-Regular'),
+    url("font-family/SoDoSans-Regular.woff2") format('woff2'),
+    url('font-family/SoDoSans-Regular.woff') format('woff'),
+    url('font-family/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SoDoSans,'Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+body{
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+body *{
+    font-family: inherit;
+}
+.header{
+    height: auto
+}
+/*navbar*/
+
+nav, nav *{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.logo, .logo svg{
+    height: 50px;
+    width: auto;
+}
+nav{
+    box-shadow: 0 2px 2px rgba(196, 195, 195, 0.73);
+}
+nav *{
+    font-size: 14px;
+}
+.navbar_left{
+    font-weight: bold;
+}
+.navbar_left .logo{
+    margin: 25px 40px;
+}
+.navbar_left ul>li a{
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.navbar_left ul>li{
+    margin-right: 1.5em;
+}
+.navbar_left ul a:hover{
+    color: rgb(2, 117, 75)
+}
+.navbar_right button{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid ;
+    margin-right: 1.2em;
+}
+.navbar_right{
+    width: auto;
+    margin-right: 2em;
+}
+.navbar_right *{
+    font-weight: 500;
+}
+.navbar_right svg{
+    height: 20px !important;
+}
+.navbar_right .findstore{
+    margin-right: 3em;
+}
+.navbar_right .findstore:hover{
+    color: green;
+    cursor: pointer
+}
+
+/*main*/
+
+main>div{
+    margin-top: 2rem;
+}
+.slider *{
+    color: rgb(30, 57, 50);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.slider h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+.slider span{
+    font-size: 20px;
+}
+.slider button{
+    border: 1px solid rgb(30, 57, 50);
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 15px;
+    letter-spacing: 0;
+}
+.slider button:hover{
+    background-color: rgb(192, 216, 206) !important;
+}
+.slider2,
+.slider2 button{
+    background-color: rgb(246, 191, 217);
+}
+.slider2 button:hover{
+    background-color: rgb(217, 168, 194) !important;
+}
+.slider h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.slider span{
+    font-size: 25px;
+    font-weight: 400;
+}
+.slider1 span{
+    font-size: 18px;
+}
+.slider3,
+.slider3 button{
+    background-color: rgb(255, 243, 214);
+}
+.slider3 button:hover{
+    background-color: rgb(230, 219, 192) !important;
+}
+
+.slider4,
+.slider4 button{
+    background-color: rgb(212, 233, 226);
+}
+.p_text p{
+    font-size: 14px;
+}
+
+.p_text .p1{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.p_text .p2{
+    margin-bottom: 30px;
+}
+.p_text a:hover{
+    text-decoration: none;
+}
+
+/*footer*/
+footer{
+    height: 400px;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.13);
+}
+footer .content>div{
+    margin-right: 30px;
+    width: 14.3%
+}
+footer .content *{
+    font-size: 19px;
+    font-weight: 350;
+}
+footer .content ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+footer .content ul li{
+    margin-bottom: 20px;
+}
+footer .content ul li a{
+    font-size: 17px;
+}
+footer .content ul li a:hover{
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+footer .content{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important;
+}
+footer .privacy_table table{
+    border-collapse: collapse !important;
+}
+.icon a{
+    font-size: 20px;
+    padding-bottom: 6.5px;
+    padding-top: 2px;
+    border-radius: 30px;
+}
+.icon a:hover{
+    padding: 7px 5px 11px 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.privacy_table ul a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.privacy_table li{
+    list-style-type: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0 20px;
+}
+.privacy_table li:first-child{
+    border-left: none;
+    padding-left: 0;
+}
+.privacy_table li:last-child{
+    border-right: none;
+}
+.privacy_table li:hover {
+    text-decoration: black;
+    text-decoration-line: underline;
+}
+small .small{
+   font-size: 12px;
+}
+@media screen and (max-width: 786px) {
+    .navbar_left>ul, .navbar_right>*{
+        display: none;
+    }
+    .navbar_right .multiple-case{
+        display: block !important;
+    }
+}
