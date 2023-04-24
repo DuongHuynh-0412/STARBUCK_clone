@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'SoDoSans';
+    src: local('SoDo Sans Regular'), local('SoDo-Sans-Regular'),
+    url("../font-family/SoDoSans-Regular.woff2") format('woff2'),
+    url('../font-family/SoDoSans-Regular.woff') format('woff'),
+    url('../font-family/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: SoDoSans,'Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+*{
+    letter-spacing: 1px;
+}
+:root{
+    --color-yellow: #fff5d6;
+    --color-green-blue: #d4e9e2;
+    --color-green-light: #F1F7F5;
+    --color-pink-purple: #f6bfd9;
+    --color-greenStarbuck: #006241;
+}
+body{
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+body *{
+    font-family: inherit;
+}
+.header{
+    height: auto
+}
+
+/*navbar*/
+nav, nav *{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.logo, .logo svg{
+    height: 50px;
+    width: auto;
+}
+nav{
+    box-shadow: 0 2px 2px rgba(196, 195, 195, 0.73);
+}
+nav *{
+    font-size: 14px;
+}
+.navbar_left{
+    font-weight: bold;
+}
+.navbar_left .logo{
+    margin: 25px 40px;
+}
+.navbar_left ul>li a{
+    color: black;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.navbar_left ul>li{
+    margin-right: 1.5em;
+}
+.navbar_left ul a:hover{
+    color: rgb(2, 117, 75)
+}
+.navbar_left .REWARDS{
+    border-bottom : 6px solid rgb(2, 117, 75);
+    padding: 42px 0 34px 0;
+}
+.navbar_right button{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid ;
+    margin-right: 1.2em;
+}
+.navbar_right{
+    width: auto;
+    margin-right: 2em;
+}
+.navbar_right *{
+    font-weight: 500;
+}
+.navbar_right svg{
+    height: 20px !important;
+}
+.navbar_right .findstore{
+    margin-right: 3em;
+}
+.navbar_right .findstore:hover{
+    color: green;
+    cursor: pointer
+}
+.Sign_in_button:hover{
+    background-color: rgba(213, 212, 212, 0.6) !important;
+}
+
+.Join_now_button:hover{
+    background-color: #404040 !important;
+}
+/*main*/
+.content_fixed{
+    background-color: rgb(30, 57, 50);
+    height: 50px;
+}
+.content_fixed span{
+    font-size: 14px;
+    font-weight: 550;
+    margin-left:8rem;
+    letter-spacing: 1px;
+}
+.content_fixed span sup{
+    font-size: 10px;
+}
+.Free_CF{
+    height: 800px;
+    background-image: url("../image/xl-hero-desktop_2021.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+.Free_CF .inf h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: start;
+    width: 260px
+}
+.Free_CF .inf span{
+    font-size: 20px;
+}
+.Free_CF, .Free_CF button{
+    background-color: var(--color-green-blue);
+}
+.Free_CF button{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid;
+    margin-right: 1.2em;
+}
+.Getting_Started{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.Getting_Started img{
+    width: 50px
+}
+.Getting_Started h5{
+    margin-top: 30px;
+}
+.Getting_Started span{
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 23px;
+}
+.Getting_Started span a{
+    color: var(--color-greenStarbuck)
+}
+.Getting_Started span a:hover{
+    text-decoration: none;
+}
+.w-27{
+    width: 26.6%
+}
+.w-90{
+    width: 90%
+}
+.front_Rating,.front_Rating li{
+    background-color: var(--color-green-light);
+}
+
+.Rating li{
+    padding-bottom: 17px;
+    width: 100px
+}
+.Rating li:hover{
+    cursor: pointer
+}
+.Rating li .fa-star{
+    font-size: 13px;
+    color:#cba258;
+}
+.Rating li .Text{
+    font-size: 22px;
+}
+.Rating .image_for_illustrate{
+    height: 275px
+}
+.front_Rating h3{
+    font-weight: 600;
+}
+.image_for_illustrate{
+    background-color: var(--color-green-blue);
+}
+.image_for_illustrate h4{
+    line-height: 33px;
+    font-weight: 550;
+}
+.image_for_illustrate h4 sup{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.image_for_illustrate span{
+    font-size: 15px;
+}
+._img{
+    max-width: 375px;
+}
+
+.Endless_Extra{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.Endless_Extra span{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.Endless_Extra img{
+    width: 110px
+}
+.learnmore{
+    color: var(--color-greenStarbuck)
+}
+.learnmore:hover{
+    text-decoration: none;
+}
+.CashOrCard{
+    height: 680px;
+    background-color: #f2f0ea;
+}
+.CashOrCard span{
+    width: 45%;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
+
+.CashOrCard img{
+    height: 150px;
+    width: auto
+}
+.CashOrCard .star_for_cashcard{
+    margin-top: 100px;
+}
+.w-27{
+    width: 28%
+}
+.w-30{
+    width: 30%
+}
+.w-20{
+    width: 20%
+}
+
+.CashOrCard h5{
+    font-size: 17px;
+}
+.Join_Starbuck_Reward{
+    height: 610px;
+    background-image: url("../image/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Join_Starbuck_Reward .main_div{
+    background-color: var(--color-green-blue);
+    width: 96%;
+    height: 90%
+}
+
+.Join_Starbuck_Reward .star_left{
+    width: 30%;
+    background-image: url("../image/starleft.svg");
+    background-repeat: no-repeat;
+}
+
+.Join_Starbuck_Reward .main_div .main_content img{
+    height: 70px
+}
+.Join_Starbuck_Reward .main_div .main_content span{
+    width: 72%;
+    letter-spacing: 0.5px;
+}
+.Join_Starbuck_Reward .main_div .main_content span a{
+    color: var(--color-greenStarbuck);
+}
+.Join_Starbuck_Reward .main_div .main_content span a:hover{
+    text-decoration: none;
+}
+.Join_Starbuck_Reward .main_div .main_content button{
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin-right: 1.2em;
+    background-color: var(--color-greenStarbuck);
+}
+.Join_Starbuck_Reward .main_div .main_content button:hover{
+    background-color: #00865a;
+}
+
+.Join_Starbuck_Reward .main_div .star_right{
+    width: 30%;
+    background-image: url("../image/starright.svg");
+    background-repeat: no-repeat;
+}
+
+
+.Question_div{
+    margin-top: 100px;
+    margin-left: 265px;
+    width: 55%;
+    margin-bottom: 100px;
+}
+.Question_div a:hover{
+    text-decoration: none;
+}
+.Question_div a{
+    color: var(--color-greenStarbuck)
+}
+
+.Bonus_information{
+    background-color: #f9f9f9;
+    height: 500px
+}
+
+/*footer*/
+footer{
+    height: 400px;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.13);
+}
+footer .content>div{
+    margin-right: 30px;
+    width: 14.7%
+}
+footer .content *{
+    font-size: 17px;
+    font-weight: 350;
+}
+footer .content ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+footer .content ul li{
+    margin-bottom: 20px;
+}
+footer .content ul li a{
+    font-size: 17px;
+}
+footer .content ul li a:hover{
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+footer .content{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important;
+}
+footer .privacy_table table{
+    border-collapse: collapse !important;
+}
+.icon a{
+    font-size: 20px;
+    padding-bottom: 6.5px;
+    padding-top: 2px;
+    border-radius: 30px;
+}
+.icon a:hover{
+    padding: 7px 5px 11px 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.privacy_table ul a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.privacy_table li{
+    list-style-type: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0 20px;
+}
+.privacy_table li:first-child{
+    border-left: none;
+    padding-left: 0;
+}
+.privacy_table li:last-child{
+    border-right: none;
+}
+.privacy_table li:hover {
+    text-decoration: black;
+    text-decoration-line: underline;
+}
+small .small{
+    font-size: 12px;
+}
+@media screen and (max-width: 786px) {
+    .navbar_left>ul, .navbar_right>*{
+        display: none;
+    }
+    .navbar_right .multiple-case{
+        display: block !important;
+    }
+}

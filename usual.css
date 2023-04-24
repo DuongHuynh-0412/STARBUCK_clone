@@ -1,3 +1,6 @@
 .text-none-decorate *{
     text-decoration: none;
 }
+.all_text_black a{
+    color: black;
+}

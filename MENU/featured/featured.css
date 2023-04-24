@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'SoDoSans';
     src: local('SoDo Sans Regular'), local('SoDo-Sans-Regular'),
-    url("font-family/SoDoSans-Regular.woff2") format('woff2'),
-    url('font-family/SoDoSans-Regular.woff') format('woff'),
-    url('font-family/SoDoSans-Regular.ttf') format('truetype');
+    url("../../font-family/SoDoSans-Regular.woff2") format('woff2'),
+    url('../../font-family/SoDoSans-Regular.woff') format('woff'),
+    url('../../font-family/SoDoSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -26,7 +26,9 @@ body *{
     height: auto
 }
 /*navbar*/
-
+nav{
+    z-index: 30;
+}
 nav, nav *{
     display: flex;
     flex-flow: row;
@@ -35,9 +37,6 @@ nav, nav *{
 .logo, .logo svg{
     height: 50px;
     width: auto;
-}
-nav{
-    box-shadow: 0 2px 2px rgba(196, 195, 195, 0.73);
 }
 nav *{
     font-size: 14px;
@@ -58,6 +57,10 @@ nav *{
 }
 .navbar_left ul a:hover{
     color: rgb(2, 117, 75)
+}
+.navbar_left .Menu{
+    border-bottom : 6px solid rgb(2, 117, 75);
+    padding: 42px 0 34px 0;
 }
 .navbar_right button{
     padding: 5px 15px;
@@ -82,86 +85,66 @@ nav *{
     color: green;
     cursor: pointer
 }
-.Sign_in_button:hover{
-    background-color: rgba(213, 212, 212, 0.6) !important;
-}
-.Join_now_button:hover{
-    background-color: #404040 !important;
-}
+
 
 /*main*/
-
-main>div{
-    margin-top: 2rem;
+.big_content{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
-.slider *{
-    color: rgb(30, 57, 50);
-    letter-spacing: 1px;
-    text-align: center;
+.w-49{
+    width: 49%;
 }
-.slider h2{
-    font-size: 25px;
-    font-weight: 500;
+.content1, .content1 button{
+    background-color: rgb(246, 191, 217);
 }
-.slider span{
+.Content h4{
+    font-weight: 550;
+}
+.Content span{
     font-size: 20px;
+    width: 85%;
+    font-weight: 350;
+    color: rgba(0, 0, 0, 0.8);
 }
-.slider button{
+.Content span sup{
+    font-size: 10px;
+}
+.Content button{
     border: 1px solid rgb(30, 57, 50);
     border-radius: 30px;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
     padding: 5px 15px;
     letter-spacing: 0;
 }
-.slider button:hover{
-    background-color: rgb(192, 216, 206) !important;
-}
-.slider2,
-.slider2 button{
-    background-color: rgb(246, 191, 217);
-}
-.slider2 button:hover{
-    background-color: rgb(217, 168, 194) !important;
-}
-.slider h1{
-    font-size: 50px;
-    letter-spacing: 5px;
-    font-weight: 700;
-}
-.slider span{
-    font-size: 25px;
-    font-weight: 400;
-}
-.slider1 span{
-    font-size: 18px;
-}
-.slider3,
-.slider3 button{
-    background-color: rgb(255, 243, 214);
-}
-.slider3 button:hover{
-    background-color: rgb(230, 219, 192) !important;
+
+.content1 button:hover{
+    background-color: rgb(223, 172, 194);
 }
 
-.slider4,
-.slider4 button{
+.content2, .content2 button{
+    background-color: rgb(159, 193, 146);
+}
+.content2 button:hover{
+    background-color: rgb(136, 164, 123);
+}
+.content3, .content3 button{
+    background-color: rgb(255, 245, 214);
+}
+.content3 button:hover{
+    background-color: rgb(224, 220, 189);
+}
+.content4, .content4 button{
     background-color: rgb(212, 233, 226);
 }
-.p_text p{
-    font-size: 14px;
+.content4 button:hover{
+    background-color: rgb(195, 215, 209);
 }
-
-.p_text .p1{
-    margin-top: 30px;
-    margin-bottom: 100px;
+.crash_content span{
+    font-size: 12px;
 }
-.p_text .p2{
-    margin-bottom: 30px;
-}
-.p_text a:hover{
-    text-decoration: none;
-}
-
 /*footer*/
 footer{
     height: 400px;
@@ -231,12 +214,4 @@ footer .privacy_table table{
 }
 small .small{
     font-size: 12px;
-}
-@media screen and (max-width: 786px) {
-    .navbar_left>ul, .navbar_right>*{
-        display: none;
-    }
-    .navbar_right .multiple-case{
-        display: block !important;
-    }
 }
